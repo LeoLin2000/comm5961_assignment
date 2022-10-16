@@ -5,7 +5,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Assignment 2</title>
-  <link href="style.css" rel="stylesheet">
+  <link href="style_long.css" rel="stylesheet">
+  <style>
+    .second-part .charts {
+    display:flex;
+    }
+
+  </style>
 </head>
 
 <body>
@@ -25,17 +31,30 @@
   </header>
 
   <section><!--section-->
-  
-  <aside><!--aside-->
-    <div class="aside-title">02</div>
-    <div class="aside-text">This will be my second assigntment. 
-      <br>To be updated...
-  </aside>
+    <div class="first-part">
+      <aside><!--aside-->
+        <div class="aside-title">02</div>
+        <div class="aside-text">This is my second assigntment. 
+          <br>Feel free to have a look at my journal here.</div>
+      </aside>
 
-  <main><!--main-->
-    <div class="main-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
-  </main> 
-  
+      <main><!--main-->
+        <img src="chart1.png" width="740" class="center">
+        <div class="main-text">Living in Fanling, I always feel that there are limited good restaurants around, especially when compared with downtown. However, based on the data on OpenRice, there are actually quite a few good restaurants for people to try in Fanling. To find the best restaurants, I generated a metric called “net sentiment” by calculating the number of likes a restaurant received minus the number of dislikes it received. The above chart shows the top 10 restaurants in Fanling with the highest net sentiment. These restaurants are worth a try if you want to treat yourself to a good meal.</div>
+      </main> 
+    </div>
+
+    <div class="second-part">
+      <div class="text" class="second-par">What are the most common types of restaurants in Fanling? The frist chart on the right shows the number of restaurants in different categories in Fanling. Hong Kong-style and Cantonese restaurants are most numerous, along with a considerable number of Japanese and Taiwanese restaurants.<br>
+      <br>
+      Which cuisines are most appreciated in Fanling? The second chart on the right displays the top 10 cuisines by net sentiment in Fanling (only cuisines with at least 8 restaurants are taken into account). Sichuan, Western, international and Thai food received the most positive feedback.
+      </div>   
+      <div class="charts">
+        <img src="chart2.png" height="250" style="padding: 0px 10px">
+        <img src="chart3.png" height="250">
+      </div>  
+    </div>
+
   </section><!--the end of section-->
 
   <footer><!--footer-->

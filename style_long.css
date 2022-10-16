@@ -12,7 +12,7 @@ html {
 .page-container {
   display: grid;
   grid-template-columns: 3fr 7fr;
-  grid-template-rows: 10vh 80vh 10vh;
+  grid-template-rows: 10vh 130vh 10vh;
   grid-template-areas: "header header"
                        "section section"
                        "footer footer";
@@ -94,9 +94,24 @@ nav ul li a:hover {
 /*section*/
 section {
   grid-area: section;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 80vh 50vh;
+  grid-template-areas: "first-part"
+                       "second-part";
+}
+
+section .first-part {
   display:flex;
   flex-direction: row;
-  position: relative
+  position: relative;
+  grid-area: first-part;
+}
+
+section .second-part {
+  grid-area: second-part;
+  margin: 0rem 2rem;
+  display:flex;
 }
 
 aside {
@@ -143,6 +158,14 @@ main .main-text {
   line-height: 1.5;
   font-size: 1.6rem;
 }
+
+.text {
+  color: #F0F0F2;
+  line-height: 1.5;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
 
 /*footer*/
 footer {
