@@ -5,7 +5,16 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Assignment 5</title>
-  <link href="style.css" rel="stylesheet">
+  <link href="style_long.css" rel="stylesheet">
+  <style>
+    .page-container {
+      min-height: 270vh;
+    }
+
+    .second-part {
+  background-color: black;
+}
+  </style>
 </head>
 
 <body>
@@ -25,22 +34,61 @@
   </header>
 
   <section><!--section-->
-  
-  <aside><!--aside-->
-    <div class="aside-title">05</div>
-    <div class="aside-text">This will be my fifth assigntment. 
-      <br>To be updated...
-  </aside>
+    <div class="first-part">
+      <aside><!--aside-->
+        <div class="aside-title">05</div>
+        <div class="aside-text">This is my fifth assigntment.
+        <br>Feel free to have a look at my journal <a href="#" class="url">here</a>.</div>
+      </aside>
 
-  <main><!--main-->
-    <div class="main-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
-  </main> 
-  
+      <main><!--main-->
+        <div class="main-text">The proposed solution aims to help users efficiently gain comprehensive information about local cultural events and plan their trip accordingly. The incorporated cultural event information would serve as a hook for users to visit the website. In addition, the website will provide premium services where users can subscribe to receive discounts on certain events and merchandise. Moreover, the geographical location has been set at Xiamen (厦门), not only to narrow the scope, but also because localization enables comprehensiveness and serves as a strength of the website. Further validation of critical assumptions of what will engage the users and encourage them to pay for premium membership has to be conducted as follows.
+        <br>
+        <br>
+        Efficiently gaining the needed information about local cultural events is the main functional requirement that needs to be validated. Additionally, it is of high importance to test whether users are willing to be a member of the website and subscribe to the premium service. Both usability test and AB test will be conducted to obtain feedback for the validation.
+        </div>
+      </main> 
+    </div>
+
+    <div class="second-part">
+      <div class="text" class="second-par">
+        <div style="font-weight:bold;">Usability test</div>
+        Five tasks were designed to test the ease of use in gaining information about cultural events and joining the membership:<br>
+        1. Find the details of an exhibition/lecture/workshop (randomly choose one category and ask the participant to find that category);<br>
+        2. Find the related articles/reviews of a particular event;<br>
+        3. Find the information about souvenirs/merchandise of a particular event;<br>
+        4. Upload a review;<br>
+        5. Register and log in.
+        <br>
+        <br>
+        Three post-test questions were also designed to obtain recommendations for improvement:<br>
+        1. Please rate the overall process: 10 as very satisfied, 1 as very dissatisfied.<br>
+        2. Are you willing to subscribe to premium membership of this website?<br>
+        3. How do you think the website can be improved?<br>
+        <br>
+        The results are as follows:<br>
+        <div style="display:flex">
+        <img src="ut_result_table.JPG" width="400" style="margin-right:20px">
+        Generally, the test went well. Participants were happy to try out the high-fidelity prototype and rate higher in terms of satisfaction compared with the first round of test. Yet, it was found that most of participants spent a lot of time or failed to find the entrance to upload reviews/articles. This problem should be addressed in the next version.<br><br>
+        Regarding monetization, participants’ feedback aligns with the findings in previous user research (interviews). Most of them expressed that the information itself is not enough to trigger their purchase intentions. However, they were interested in the discounts and other potential benefits the premium membership would get. It seems good to keep current monetization scheme.
+        </div>
+        <br>
+
+        <div style="font-weight:bold;">A/B test</div>
+        <div style="display:flex">
+        <img src="variant.JPG" width="400" style="margin-right:20px">
+
+        An A/B test was designed to test whether an advertising box showing benefits of subscribing to the premium membership can trigger more registration, login, and subscription form submission.<br><br>
+        The original version is without the advertising box, while the variant was added an advertising box with CTA button on the homepage. By clicking the CTA button, users will be directed to registration page.<br><br>
+        This test is still running, and the results will be released later.
+      </div>
+        
+
+        
+      </div>   
+    </div>
+
   </section><!--the end of section-->
-
-  <footer><!--footer-->
-    <a href="https://github.com/LeoLin2000">Visit Leo's Github</a>
-  </footer>
 
 </div><!--the end of page-container-->
 </body>
